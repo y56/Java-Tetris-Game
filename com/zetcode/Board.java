@@ -17,7 +17,7 @@ public class Board extends JPanel
         implements ActionListener {
 
     private final int BOARD_WIDTH = 10;
-    private final int BOARD_HEIGHT = 22;
+    private final int BOARD_HEIGHT = 32;
     private final int DELAY = 400;
 
     private Timer timer;
