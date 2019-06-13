@@ -15,8 +15,9 @@ public class Tetris extends JFrame {
   
   public Tetris() { // constructor of Tetris (which is a JFrame)
     
-    initUI();
-    this.setLocation(0, 0); // (0,0) is a left-up corner
+    this.initUI();
+    this.setLayout(null); // Use it, otherwise the position of Board (extending JPanel)
+    this.setLocation(100, 100); // (0,0) is a left-up corner
     
   }
   
@@ -26,22 +27,21 @@ public class Tetris extends JFrame {
     statusbar = new JLabel(" 0");
     add(statusbar, BorderLayout.SOUTH);
     
-    Board board = new Board(this);
-    Board board2 = new Board(this);
-
-//        add(board);
-//        board.setLocation(0,0);
-//        board.setSize(100,100);
-//        board.start();
+    Board boardL = new Board(this);
+    Board boardR = new Board(this);
+  
+    boardL.setBounds(20, 20, 500, 500);
+    add(boardL);
+    boardL.start();
     
-    add(board2);
-    board2.setLocation(0, 0);
-    board2.setPreferredSize(new Dimension(40, 40));
-    board2.start();
+    boardR.setBounds(530, 20, 500, 500);
+    add(boardR);
+    boardR.start();
+    
     
     
     setTitle("Tetris");
-    setSize(300, 600); // the size of a window when the window first appear
+    setSize(1200, 700); // the size of a window when the window first appear
     setDefaultCloseOperation(EXIT_ON_CLOSE);
     setLocationRelativeTo(null);
   }

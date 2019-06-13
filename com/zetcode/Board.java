@@ -16,8 +16,8 @@ import com.zetcode.Shape.Tetrominoe;
 public class Board extends JPanel
   implements ActionListener {
   
-  private final int BOARD_WIDTH = 100; // the number of boxes within a side
-  private final int BOARD_HEIGHT = 100;
+  private final int BOARD_WIDTH = 10; // the number of boxes within a side
+  private final int BOARD_HEIGHT = 20;
   private final int DELAY = 600;
   
   private Timer timer;
@@ -34,6 +34,8 @@ public class Board extends JPanel
   public Board(Tetris parent) {
     
     initBoard(parent);
+    this.setBounds(20, 20, 100, 200);
+    
   }
   
   private void initBoard(Tetris parent) {
@@ -47,8 +49,9 @@ public class Board extends JPanel
     statusbar = parent.getStatusBar();
     board = new Tetrominoe[BOARD_WIDTH * BOARD_HEIGHT];
     addKeyListener(new TAdapter());
-    clearBoard();
+    clearBoard(); // ???
   }
+  
   
   @Override
   public void actionPerformed(ActionEvent e) {
@@ -310,9 +313,6 @@ public class Board extends JPanel
         case KeyEvent.VK_LEFT:
           tryMove(curPiece, curX - 1, curY);
           break;
-        case 'A':
-          tryMove(curPiece, curX - 1, curY);
-          break;
         
         case KeyEvent.VK_RIGHT:
           tryMove(curPiece, curX + 1, curY);
@@ -329,10 +329,7 @@ public class Board extends JPanel
         case KeyEvent.VK_SPACE:
           dropDown();
           break;
-        
-        case 'D':
-          oneLineDown();
-          break;
+          
       }
     }
   }

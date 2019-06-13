@@ -7,18 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ab91d3f-bb36-4cbd-b0c9-856dad6dc0ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/zetcode/TestJFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/zetcode/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/zetcode/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/zetcode/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/zetcode/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/zetcode/TestJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/zetcode/TestJFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/zetcode/Tetris.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/zetcode/Tetris.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-Tetris-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Tetris-Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-Tetris-Game/com/zetcode/Board$TAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Tetris-Game/com/zetcode/Board$TAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-Tetris-Game/com/zetcode/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Tetris-Game/com/zetcode/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-Tetris-Game/com/zetcode/Shape$Tetrominoe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Tetris-Game/com/zetcode/Shape$Tetrominoe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-Tetris-Game/com/zetcode/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Tetris-Game/com/zetcode/Shape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-Tetris-Game/com/zetcode/Tetris.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com/zetcode/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
+            <state relative-caret-position="788">
+              <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1533#1534#0" expanded="true" />
@@ -83,13 +74,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com/zetcode/Tetris.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="336">
+              <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Tetris#0;class#Tetris#0" />
-                <element signature="method#initUI#0;class#Tetris#0" />
-                <element signature="method#getStatusBar#0;class#Tetris#0" />
               </folding>
             </state>
           </provider>
@@ -98,10 +87,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com/zetcode/TestJFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            <state relative-caret-position="84">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#668#669#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,6 +112,7 @@
       <find>ZShape</find>
       <find>local</find>
       <find>sets</find>
+      <find>Color</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,17 +127,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/com/zetcode/Shape.java" />
-        <option value="$PROJECT_DIR$/com/zetcode/Board.java" />
-        <option value="$PROJECT_DIR$/com/zetcode/Tetris.java" />
         <option value="$PROJECT_DIR$/com/zetcode/test.java" />
+        <option value="$PROJECT_DIR$/com/zetcode/Tetris.java" />
+        <option value="$PROJECT_DIR$/com/zetcode/Board.java" />
         <option value="$PROJECT_DIR$/com/zetcode/TestJFrame.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
-    <option name="width" value="1062" />
-    <option name="height" value="631" />
+    <option name="x" value="-1088" />
+    <option name="y" value="-956" />
+    <option name="width" value="1096" />
+    <option name="height" value="1936" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -223,6 +216,20 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.TestJFrame">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Java-Tetris-Game" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestJFame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestJFame" />
+      <module name="Java-Tetris-Game" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestJFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zetcode.TestJFrame" />
       <module name="Java-Tetris-Game" />
@@ -256,6 +263,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestJFrame" />
+        <item itemvalue="Application.TestJFame" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Tetris" />
         <item itemvalue="JAR Application.Java-Tetris-Game.jar" />
       </list>
@@ -286,7 +295,21 @@
       <option name="project" value="LOCAL" />
       <updated>1560407186480</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update">
+      <created>1560425380175</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560425380175</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update">
+      <created>1560426054622</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560426054622</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -299,7 +322,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-1088" y="-956" width="1096" height="1936" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.12934947" />
@@ -311,15 +334,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.049099836" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.04714365" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32902297" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5015129" side_tool="true" weight="0.32569557" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32872504" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32872504" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.11869107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -387,7 +410,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Build an IDEA project" />
     <MESSAGE value="Build artifacts (jars)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Build artifacts (jars)" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Java-Tetris-Game.iml">
@@ -431,8 +455,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/com/zetcode/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
+        <state relative-caret-position="788">
+          <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1533#1534#0" expanded="true" />
@@ -447,23 +471,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/com/zetcode/Tetris.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="336">
+          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Tetris#0;class#Tetris#0" />
-            <element signature="method#initUI#0;class#Tetris#0" />
-            <element signature="method#getStatusBar#0;class#Tetris#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/com/zetcode/TestJFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        <state relative-caret-position="84">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
           </folding>
         </state>
       </provider>

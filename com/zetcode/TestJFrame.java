@@ -6,16 +6,19 @@ import java.awt.*;
 public class TestJFrame extends JFrame {
   
   public TestJFrame() {
-    
+    this.setLayout(null);
     this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-    this.setLocation(250, 250);
-    this.setSize(300, 300);
-    this.setVisible(true);
+    this.setLocation(25, 25); // the position where a window appear, coordinating from up-left
+    this.setSize(500, 500); // size of window
     
     JPanel panel = new JPanel();
+//    panel.setLayout(null);
+    panel.setBounds(100, 100, 200, 200);
+    panel.setBackground(Color.BLACK);
+  
     this.add(panel);
-    panel.setLocation(150, 150);
-    panel.add(new JButton("Hello!")); // just to show JPanel
+    
+    panel.add(new JButton("Hello!"));
     
   }
   public static void main(String[] args) {
