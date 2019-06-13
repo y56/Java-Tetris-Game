@@ -7,9 +7,22 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import javax.swing.*;
+
+import java.awt.EventQueue;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
+import java.util.Arrays;
+import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.Action;
+import javax.swing.BorderFactory;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.Timer;
+import javax.swing.KeyStroke;
 
 import com.zetcode.ShapeL.TetrominoeL;
 
@@ -32,6 +45,16 @@ public class BoardL extends JPanel
   private TetrominoeL[] board;
   
   BoardL(Tetris parent) {
+    this.getInputMap(JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT)
+      .put(KeyStroke.getKeyStroke(KeyEvent.VK_EQUALS, 0), "equals");
+  
+    this.getActionMap().put("equals", new AbstractAction() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+//          getAction().actionPerformed(e);
+        dropDown();
+      }
+    });
     
     initBoard(parent);
   }
@@ -331,4 +354,11 @@ public class BoardL extends JPanel
       }
     }
   }
+//  private Action action = new UpdateAction(this);
+//  public Action getAction() {
+//    return action;
+//  }
+//  private static class UpdateAction extends AbstractAction {
+//    dropDown();
+//  }
 }
