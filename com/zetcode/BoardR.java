@@ -7,9 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.Timer;
+import javax.swing.*;
 
 import com.zetcode.ShapeR.TetrominoeR;
 
@@ -34,6 +32,16 @@ public class BoardR extends JPanel
   BoardR(Tetris parent) {
     
     initBoard(parent);
+  
+    this.getInputMap(JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT)
+      .put(KeyStroke.getKeyStroke(KeyEvent.VK_EQUALS, 0), "equals");
+  
+    this.getActionMap().put("equals", new AbstractAction() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        dropDown();
+      }
+    });
   }
   
   private void initBoard(Tetris parent) {
@@ -49,7 +57,6 @@ public class BoardR extends JPanel
     addKeyListener(new TAdapter());
     clearBoard(); // ???
   }
-  
   
   @Override
   public void actionPerformed(ActionEvent e) {
@@ -148,7 +155,7 @@ public class BoardR extends JPanel
     doDrawing(g);
   }
   
-  private void dropDown() {
+  public void dropDown() {
     
     int newY = curY;
     
