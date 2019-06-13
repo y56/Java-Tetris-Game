@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Java-Tetris-Game.iml" filepath="$PROJECT_DIR$/Java-Tetris-Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-Tetris-vs-Snake-Game.iml" filepath="$PROJECT_DIR$/Java-Tetris-vs-Snake-Game.iml" />
     </modules>
   </component>
 </project>

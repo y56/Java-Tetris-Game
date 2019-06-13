@@ -2,7 +2,7 @@
   <artifact type="jar" name="Java-Tetris-Game:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/Java_Tetris_Game_jar</output-path>
     <root id="archive" name="Java-Tetris-Game.jar">
-      <element id="module-output" name="Java-Tetris-Game" />
+      <element id="module-output" name="Java-Tetris-vs-Snake-Game" />
     </root>
   </artifact>
 </component>
