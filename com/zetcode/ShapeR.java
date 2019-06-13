@@ -2,27 +2,25 @@ package com.zetcode;
 
 import java.util.Random;
 
-public class Shape {
+public class ShapeR {
   
-  protected enum Tetrominoe {
+  protected enum TetrominoeR {
     NoShape, ZShape, SShape, LineShape,
     TShape, SquareShape, LShape, MirroredLShape
   }
   
-  ;
-  
-  private Tetrominoe pieceShape;
+  private TetrominoeR pieceShape;
   private int coords[][];
   private int[][][] coordsTable;
   
   
-  public Shape() {
+  ShapeR() {
     
     coords = new int[4][2];
-    setShape(Tetrominoe.NoShape);
+    setShape(TetrominoeR.NoShape);
   }
   
-  public void setShape(Tetrominoe shape) {
+  void setShape(TetrominoeR shape) {
     
     coordsTable = new int[][][]{
       {{0, 0}, {0, 0}, {0, 0}, {0, 0}},
@@ -54,23 +52,23 @@ public class Shape {
     coords[index][1] = y;
   }
   
-  public int x(int index) {
+  int x(int index) {
     return coords[index][0];
   }
   
-  public int y(int index) {
+  int y(int index) {
     return coords[index][1];
   }
   
-  public Tetrominoe getShape() {
+  TetrominoeR getShape() {
     return pieceShape;
   }
   
-  public void setRandomShape() {
+  void setRandomShape() {
     
     Random r = new Random();
     int x = Math.abs(r.nextInt()) % 7 + 1;
-    Tetrominoe[] values = Tetrominoe.values();
+    TetrominoeR[] values = TetrominoeR.values();
     setShape(values[x]);
   }
   
@@ -87,7 +85,7 @@ public class Shape {
   }
   
   
-  public int minY() {
+  int minY() {
     
     int m = coords[0][1];
     
@@ -99,12 +97,12 @@ public class Shape {
     return m;
   }
   
-  public Shape rotateLeft() {
+  ShapeR rotateLeft() {
     
-    if (pieceShape == Tetrominoe.SquareShape)
+    if (pieceShape == TetrominoeR.SquareShape)
       return this;
     
-    Shape result = new Shape();
+    ShapeR result = new ShapeR();
     result.pieceShape = pieceShape;
     
     for (int i = 0; i < 4; ++i) {
@@ -116,12 +114,12 @@ public class Shape {
     return result;
   }
   
-  public Shape rotateRight() {
+  ShapeR rotateRight() {
     
-    if (pieceShape == Tetrominoe.SquareShape)
+    if (pieceShape == TetrominoeR.SquareShape)
       return this;
     
-    Shape result = new Shape();
+    ShapeR result = new ShapeR();
     result.pieceShape = pieceShape;
     
     for (int i = 0; i < 4; ++i) {

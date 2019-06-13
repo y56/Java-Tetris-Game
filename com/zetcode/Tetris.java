@@ -16,8 +16,9 @@ public class Tetris extends JFrame {
   public Tetris() { // constructor of Tetris (which is a JFrame)
     
     this.initUI();
-    this.setLayout(null); // Use it, otherwise the position of Board (extending JPanel)
-    this.setLocation(100, 100); // (0,0) is a left-up corner
+    this.setLayout(null); /* Use it, otherwise the position of Board (extending JPanel)
+      Using this will cause statusbar to disappear */
+    this.setLocation(0, 0); // (0,0) is a left-up corner
     
   }
   
@@ -27,18 +28,21 @@ public class Tetris extends JFrame {
     statusbar = new JLabel(" 0");
     add(statusbar, BorderLayout.SOUTH);
     
-    Board boardL = new Board(this);
-    Board boardR = new Board(this);
-  
-    boardL.setBounds(20, 20, 500, 500);
-    add(boardL);
-    boardL.start();
+    BoardR boardR = new BoardR(this);
     
+  
     boardR.setBounds(530, 20, 500, 500);
     add(boardR);
     boardR.start();
+  
+  
+    BoardL boardL = new BoardL(this);
     
-    
+    boardL.setBounds(20, 20, 500, 500);
+    add(boardL);
+    boardL.start();
+
+
     
     setTitle("Tetris");
     setSize(1200, 700); // the size of a window when the window first appear

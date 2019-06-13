@@ -11,9 +11,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-import com.zetcode.Shape.Tetrominoe;
+import com.zetcode.ShapeR.TetrominoeR;
 
-public class Board extends JPanel
+public class BoardR extends JPanel
   implements ActionListener {
   
   private final int BOARD_WIDTH = 10; // the number of boxes within a side
@@ -28,26 +28,24 @@ public class Board extends JPanel
   private int curX = 0;
   private int curY = 0;
   private JLabel statusbar;
-  private Shape curPiece;
-  private Tetrominoe[] board;
+  private ShapeR curPiece;
+  private TetrominoeR[] board;
   
-  public Board(Tetris parent) {
+  BoardR(Tetris parent) {
     
     initBoard(parent);
-    this.setBounds(20, 20, 100, 200);
-    
   }
   
   private void initBoard(Tetris parent) {
     
     setBackground(Color.black);
     setFocusable(true);
-    curPiece = new Shape();
+    curPiece = new ShapeR();
     timer = new Timer(DELAY, this);
     timer.start();
     
     statusbar = parent.getStatusBar();
-    board = new Tetrominoe[BOARD_WIDTH * BOARD_HEIGHT];
+    board = new TetrominoeR[BOARD_WIDTH * BOARD_HEIGHT];
     addKeyListener(new TAdapter());
     clearBoard(); // ???
   }
@@ -74,12 +72,12 @@ public class Board extends JPanel
     return (int) getSize().getHeight() / BOARD_HEIGHT;
   }
   
-  private Tetrominoe shapeAt(int x, int y) {
+  private TetrominoeR shapeAt(int x, int y) {
     return board[(y * BOARD_WIDTH) + x];
   }
   
   
-  public void start() {
+  void start() {
     
     if (isPaused)
       return;
@@ -122,15 +120,15 @@ public class Board extends JPanel
       
       for (int j = 0; j < BOARD_WIDTH; ++j) {
         
-        Tetrominoe shape = shapeAt(j, BOARD_HEIGHT - i - 1);
+        TetrominoeR shape = shapeAt(j, BOARD_HEIGHT - i - 1);
         
-        if (shape != Tetrominoe.NoShape)
+        if (shape != TetrominoeR.NoShape)
           drawSquare(g, 0 + j * squareWidth(),
             boardTop + i * squareHeight(), shape);
       }
     }
     
-    if (curPiece.getShape() != Tetrominoe.NoShape) {
+    if (curPiece.getShape() != TetrominoeR.NoShape) {
       
       for (int i = 0; i < 4; ++i) {
         
@@ -174,7 +172,7 @@ public class Board extends JPanel
   private void clearBoard() {
     
     for (int i = 0; i < BOARD_HEIGHT * BOARD_WIDTH; ++i)
-      board[i] = Tetrominoe.NoShape;
+      board[i] = TetrominoeR.NoShape;
   }
   
   private void pieceDropped() {
@@ -200,14 +198,14 @@ public class Board extends JPanel
     
     if (!tryMove(curPiece, curX, curY)) {
       
-      curPiece.setShape(Tetrominoe.NoShape);
+      curPiece.setShape(TetrominoeR.NoShape);
       timer.stop();
       isStarted = false;
       statusbar.setText("game over");
     }
   }
   
-  private boolean tryMove(Shape newPiece, int newX, int newY) {
+  private boolean tryMove(ShapeR newPiece, int newX, int newY) {
     
     for (int i = 0; i < 4; ++i) {
       
@@ -217,7 +215,7 @@ public class Board extends JPanel
       if (x < 0 || x >= BOARD_WIDTH || y < 0 || y >= BOARD_HEIGHT)
         return false;
       
-      if (shapeAt(x, y) != Tetrominoe.NoShape)
+      if (shapeAt(x, y) != TetrominoeR.NoShape)
         return false;
     }
     
@@ -238,7 +236,7 @@ public class Board extends JPanel
       boolean lineIsFull = true;
       
       for (int j = 0; j < BOARD_WIDTH; ++j) {
-        if (shapeAt(j, i) == Tetrominoe.NoShape) {
+        if (shapeAt(j, i) == TetrominoeR.NoShape) {
           lineIsFull = false;
           break;
         }
@@ -258,12 +256,12 @@ public class Board extends JPanel
       numLinesRemoved += numFullLines;
       statusbar.setText(String.valueOf(numLinesRemoved));
       isFallingFinished = true;
-      curPiece.setShape(Tetrominoe.NoShape);
+      curPiece.setShape(TetrominoeR.NoShape);
       repaint();
     }
   }
   
-  private void drawSquare(Graphics g, int x, int y, Tetrominoe shape) {
+  private void drawSquare(Graphics g, int x, int y, TetrominoeR shape) {
     
     Color colors[] = {new Color(0, 0, 0), new Color(204, 102, 102),
       new Color(102, 204, 102), new Color(102, 102, 204),
@@ -294,7 +292,7 @@ public class Board extends JPanel
     @Override
     public void keyPressed(KeyEvent e) {
       
-      if (!isStarted || curPiece.getShape() == Tetrominoe.NoShape) {
+      if (!isStarted || curPiece.getShape() == TetrominoeR.NoShape) {
         return;
       }
       
