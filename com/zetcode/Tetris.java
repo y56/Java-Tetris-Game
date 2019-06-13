@@ -52,10 +52,11 @@ public class Tetris extends JFrame {
 
     public static void main(String[] args) {
 
-        EventQueue.invokeLater(() -> {
-
-            Tetris game = new Tetris();
-            game.setVisible(true);
-        });
+        EventQueue.invokeLater(
+          () -> {
+                  Tetris game = new Tetris();
+                  game.setVisible(true);
+                }
+        );
     }
 }
