@@ -62,7 +62,7 @@ public class Board extends JPanel
         }
     }
 
-    private int squareWidth() { return (int) getSize().getWidth() / BOARD_WIDTH; }
+    private int squareWidth() { return (int) getSize().getWidth() / BOARD_WIDTH; } // I add /2
     private int squareHeight() { return (int) getSize().getHeight() / BOARD_HEIGHT; }
     private Tetrominoe shapeAt(int x, int y) { return board[(y * BOARD_WIDTH) + x]; }
 
@@ -300,6 +300,9 @@ public class Board extends JPanel
              case KeyEvent.VK_LEFT:
                  tryMove(curPiece, curX - 1, curY);
                  break;
+             case 'A':
+                     tryMove(curPiece, curX - 1, curY);
+                     break;
                  
              case KeyEvent.VK_RIGHT:
                  tryMove(curPiece, curX + 1, curY);

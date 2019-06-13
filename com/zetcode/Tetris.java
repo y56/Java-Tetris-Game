@@ -26,11 +26,21 @@ public class Tetris extends JFrame {
         add(statusbar, BorderLayout.SOUTH);
 
         Board board = new Board(this);
+        Board board2 = new Board(this);
+
         add(board);
+        board.setLocation(0,0);
+        board.setSize(200,800);
         board.start();
 
+        add(board2);
+        board.setLocation(400,0);
+        board.setSize(200,800);
+        board2.start();
+
+
         setTitle("Tetris");
-        setSize(200, 400);
+        setSize(1000, 800);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
     }
