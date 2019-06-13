@@ -6,8 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ab91d3f-bb36-4cbd-b0c9-856dad6dc0ec" name="Default Changelist" comment="Learn to let two panels both listen to key-strokes">
+    <list default="true" id="9ab91d3f-bb36-4cbd-b0c9-856dad6dc0ec" name="Default Changelist" comment="Let TETRIS and SNAKE fight each other&#10;Abandon Key Binding.&#10;Still use KeyListener.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/zetcode/BoardL.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/zetcode/BoardL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/zetcode/BoardR.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/zetcode/BoardR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/zetcode/Tetris.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/zetcode/Tetris.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,31 +39,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com/zetcode/BoardL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+            <state relative-caret-position="128">
+              <caret line="521" column="21" lean-forward="true" selection-start-line="521" selection-start-column="21" selection-end-line="521" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/com/zetcode/TwoPanelsTest .java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/com/zetcode/BoardR.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1911">
-              <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1885#1886#0" expanded="true" />
+                <element signature="e#1990#1991#0" expanded="true" />
+                <element signature="e#2086#2087#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,26 +54,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com/zetcode/ShapeL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2457">
-              <caret line="127" column="6" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
+            <state relative-caret-position="147">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/com/zetcode/ShapeR.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com/zetcode/Tetris.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            <state relative-caret-position="216">
+              <caret line="57" column="4" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,30 +83,42 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ZShape</find>
-      <find>local</find>
-      <find>sets</find>
-      <find>Color</find>
+      <find>dropDown</find>
+      <find>ActionListener</find>
+      <find>Timer</find>
+      <find>getAction</find>
       <find>shape</find>
-      <find>Shape</find>
-      <find>tryMove</find>
       <find>ShapeL</find>
-      <find>Shaper</find>
-      <find>BoardL</find>
-      <find>shapel</find>
-      <find>minY</find>
-      <find>ShapeR</find>
-      <find>public</find>
+      <find>BOARD_WIDTH</find>
+      <find>newPiece</find>
+      <find>black</find>
+      <find>tryMove</find>
       <find>actionPerformed</find>
-      <find>addKeyListener</find>
+      <find>paintComponent</find>
       <find>TAdapter</find>
-      <find>Tetrominoe</find>
-      <find>KeyListener</find>
+      <find>SNAKE_inGame</find>
+      <find>SNAKE_dots</find>
+      <find>+300</find>
+      <find>SNAKE_apple_x</find>
+      <find>SNAKE_Timer</find>
+      <find>timer</find>
+      <find>delay</find>
+      <find>line</find>
+      <find>removeFullLines</find>
+      <find>BOARD_WIDTH_L</find>
+      <find>BOARD_WIDTH_L_TO_REMOVE_LINE</find>
+      <find>Visible</find>
+      <find>statusbar</find>
+      <find>over</find>
+      <find>white</find>
+      <find>BLACK</find>
+      <find>stop</find>
     </findStrings>
     <replaceStrings>
       <replace>ShapeR</replace>
       <replace>TetrominoeR</replace>
       <replace>TetrominoeL</replace>
+      <replace>+RIGHT_SHiFT</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -152,19 +140,19 @@
         <option value="$PROJECT_DIR$/com/zetcode/Board.java" />
         <option value="$PROJECT_DIR$/com/zetcode/ShapeR.java" />
         <option value="$PROJECT_DIR$/com/zetcode/ShapeL.java" />
+        <option value="$PROJECT_DIR$/com/zetcode/TestKeyonTwoJPanels.java" />
+        <option value="$PROJECT_DIR$/com/zetcode/TwoPanelsTest .java" />
         <option value="$PROJECT_DIR$/com/zetcode/BoardR.java" />
         <option value="$PROJECT_DIR$/com/zetcode/BoardL.java" />
-        <option value="$PROJECT_DIR$/com/zetcode/TestKeyonTwoJPanels.java" />
         <option value="$PROJECT_DIR$/com/zetcode/Tetris.java" />
-        <option value="$PROJECT_DIR$/com/zetcode/TwoPanelsTest .java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="170" />
-    <option name="y" value="91" />
-    <option name="width" value="1026" />
-    <option name="height" value="546" />
+    <option name="x" value="486" />
+    <option name="y" value="11" />
+    <option name="width" value="1062" />
+    <option name="height" value="631" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -227,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TwoPanelsTest">
+  <component name="RunManager" selected="Application.Tetris">
     <configuration name="TestJFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zetcode.TestJFrame" />
       <module name="Java-Tetris-vs-Snake-Game" />
@@ -289,9 +277,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Tetris" />
         <item itemvalue="Application.TwoPanelsTest" />
         <item itemvalue="Application.TwoPanelsTest (1)" />
-        <item itemvalue="Application.Tetris" />
         <item itemvalue="Application.TestJFrame2" />
         <item itemvalue="Application.TestJFrame" />
       </list>
@@ -357,7 +345,28 @@
       <option name="project" value="LOCAL" />
       <updated>1560442660910</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Learn to let two panels both listen to key-strokes">
+      <created>1560448776172</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1560448776172</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Learn to let two panels both listen to key-strokes">
+      <created>1560448798168</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560448798168</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Use `Key Bindings` to drop down&#10;Success to use `Key Bindings` to do a drop-down.&#10;Reference: https://stackoverflow.com/questions/10011564/how-to-make-two-jpanels-listen-to-the-same-event">
+      <created>1560453104144</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1560453104144</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -370,7 +379,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4935361" weight="0.28517398" />
@@ -381,8 +390,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" weight="0.3291506" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4980695" weight="0.3294509" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.2700491" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4980695" weight="0.32902297" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.2857143" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933443" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -390,7 +399,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3294509" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5019305" side_tool="true" weight="0.3294509" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32834166" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.11869107" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.04608295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -401,24 +410,24 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12934947" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4935361" weight="0.28517398" />
+      <window_info id="Structure" order="1" sideWeight="0.5064639" side_tool="true" weight="0.2857143" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" side_tool="true" weight="0.3291506" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.27066" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994253" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4980695" weight="0.32902297" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.2857143" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933443" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32902297" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5015129" side_tool="true" weight="0.32569557" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32872504" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.11869107" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32889628" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3294509" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5019305" side_tool="true" weight="0.3294509" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32834166" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.04608295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -476,7 +485,8 @@
     <MESSAGE value="Put two Jpanels in a Jframe" />
     <MESSAGE value="Rename the project" />
     <MESSAGE value="Learn to let two panels both listen to key-strokes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Learn to let two panels both listen to key-strokes" />
+    <MESSAGE value="Use `Key Bindings` to drop down&#10;Success to use `Key Bindings` to do a drop-down.&#10;Reference: https://stackoverflow.com/questions/10011564/how-to-make-two-jpanels-listen-to-the-same-event" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use `Key Bindings` to drop down&#10;Success to use `Key Bindings` to do a drop-down.&#10;Reference: https://stackoverflow.com/questions/10011564/how-to-make-two-jpanels-listen-to-the-same-event" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -526,37 +536,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com/zetcode/BoardL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/com/zetcode/BoardR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1911">
-          <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+        <state relative-caret-position="378">
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1448#1571#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com/zetcode/ShapeL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2457">
-          <caret line="127" column="6" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -567,20 +555,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com/zetcode/Tetris.java">
+    <entry file="file://$PROJECT_DIR$/com/zetcode/TwoPanelsTest .java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="651">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1158#1363#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com/zetcode/TwoPanelsTest .java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="147">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/zetcode/ShapeL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/zetcode/BoardL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="521" column="21" lean-forward="true" selection-start-line="521" selection-start-column="21" selection-end-line="521" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1885#1886#0" expanded="true" />
+            <element signature="e#1990#1991#0" expanded="true" />
+            <element signature="e#2086#2087#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/zetcode/Tetris.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="57" column="4" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
