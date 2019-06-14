@@ -466,6 +466,8 @@ public class BoardL extends JPanel
   
       SNAKE_dots++;
       locateApple();
+      
+      dropDown();
     }
   }
   
