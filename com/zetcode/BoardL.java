@@ -1,24 +1,23 @@
 package com.zetcode;
 
+import com.zetcode.ShapeL.TetrominoeL;
+
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import javax.swing.*;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
-import com.zetcode.ShapeL.TetrominoeL;
 
 public class BoardL extends JPanel
   implements ActionListener {
   
+  public Graphics g;
+  
   private final int BOARD_WIDTH_L = 50; // the number of boxes within a side
   private final int BOARD_HEIGHT = 20;
   private final int BOARD_WIDTH_L_TO_REMOVE_LINE = 10;
-  private final int TETRIS_DELAY = 300;
+  private final int TETRIS_DELAY = 500;
   
   private Timer tetris_timer;
   private boolean isFallingFinished = false;
@@ -44,8 +43,7 @@ public class BoardL extends JPanel
     tetris_timer.start();
     
     statusbar = parent.getStatusBar();
-    System.out.println("HAHAHA");
-    System.out.println(statusbar);
+
     board = new TetrominoeL[BOARD_WIDTH_L * BOARD_HEIGHT];
     addKeyListener(new TAdapter());
     clearBoard(); // ???
@@ -217,10 +215,18 @@ public class BoardL extends JPanel
       curPiece.setShape(TetrominoeL.NoShape);
 //      tetris_timer.stop();
       isStarted = false;
-      statusbar.setText("game over");
-      System.out.println(statusbar);
+      statusbar.setText("GAME OVER");
+
+      
+      gameOverForTetris();
     }
   }
+  private void gameOverForTetris() {
+
+    
+
+  }
+  
   
   private boolean tryMoveL(ShapeL newPiece, int newX, int newY) {
     
@@ -399,7 +405,7 @@ public class BoardL extends JPanel
   private final int SNAKE_DOT_SIZE = 10;
   private final int SNAKE_ALL_DOTS = 900;
   private final int SNAKE_RAND_POS = 29;
-  private final int SNAKE_DELAY = 300;
+  private final int SNAKE_DELAY = 500;
   
   private final int SNAKE_x[] = new int[SNAKE_ALL_DOTS];
   private final int SNAKE_y[] = new int[SNAKE_ALL_DOTS];
@@ -453,7 +459,7 @@ public class BoardL extends JPanel
   
   private void gameOver(Graphics g) {
     
-    String msg = "Game Over";
+    String msg = "GAME OVER";
     Font small = new Font("Helvetica", Font.BOLD, 30);
     FontMetrics metr = getFontMetrics(small);
     
