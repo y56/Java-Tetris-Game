@@ -199,7 +199,7 @@ public class Tetris extends JFrame {
     Path directory = Paths.get("c:\\Users\\GG\\Documents\\test-java-git");
     System.out.println(directory);
     Git.gitStage(directory);
-    Git.gitCommit(directory, "kisama ha mou sinnda");
+    Git.gitCommit(directory, "お前はもう死んでいる");
     Git.gitPush(directory);
   }
 }
