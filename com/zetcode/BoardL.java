@@ -18,10 +18,9 @@ public class BoardL extends JPanel
   private final int BOARD_WIDTH_L = 50; // the number of boxes within a side
   private final int BOARD_HEIGHT = 20;
   private final int BOARD_WIDTH_L_TO_REMOVE_LINE = 10;
-  private final int DELAY = 300;
-  private final int TURE_DELAY = 1000000;
+  private final int TETRIS_DELAY = 300;
   
-  private Timer timer;
+  private Timer tetris_timer;
   private boolean isFallingFinished = false;
   private boolean isStarted = false;
   private boolean isPaused = false;
@@ -41,10 +40,12 @@ public class BoardL extends JPanel
     
     setFocusable(true);
     curPiece = new ShapeL();
-    timer = new Timer(DELAY, this);
-    timer.start();
+    tetris_timer = new Timer(TETRIS_DELAY, this);
+    tetris_timer.start();
     
     statusbar = parent.getStatusBar();
+    System.out.println("HAHAHA");
+    System.out.println(statusbar);
     board = new TetrominoeL[BOARD_WIDTH_L * BOARD_HEIGHT];
     addKeyListener(new TAdapter());
     clearBoard(); // ???
@@ -103,7 +104,7 @@ public class BoardL extends JPanel
     clearBoard();
     
     newPiece();
-    timer.start();
+    tetris_timer.start();
   }
   
   private void pause() {
@@ -115,11 +116,11 @@ public class BoardL extends JPanel
     
     if (isPaused) {
       
-//      timer.stop();
+//      tetris_timer.stop();
       statusbar.setText("paused");
     } else {
       
-      timer.start();
+      tetris_timer.start();
       statusbar.setText(String.valueOf(numLinesRemoved));
     }
     
@@ -214,9 +215,10 @@ public class BoardL extends JPanel
     if (!tryMoveL(curPiece, curX, curY)) {
       
       curPiece.setShape(TetrominoeL.NoShape);
-//      timer.stop();
+//      tetris_timer.stop();
       isStarted = false;
       statusbar.setText("game over");
+      System.out.println(statusbar);
     }
   }
   
@@ -397,7 +399,7 @@ public class BoardL extends JPanel
   private final int SNAKE_DOT_SIZE = 10;
   private final int SNAKE_ALL_DOTS = 900;
   private final int SNAKE_RAND_POS = 29;
-  private final int SNAKE_SNIAKE_DELAY = 140;
+  private final int SNAKE_DELAY = 300;
   
   private final int SNAKE_x[] = new int[SNAKE_ALL_DOTS];
   private final int SNAKE_y[] = new int[SNAKE_ALL_DOTS];
@@ -441,7 +443,7 @@ public class BoardL extends JPanel
     
     locateApple();
   
-    SNAKE_timer = new Timer(TURE_DELAY, this);
+    SNAKE_timer = new Timer(SNAKE_DELAY, this);
     SNAKE_timer.start();
   }
   
@@ -452,7 +454,7 @@ public class BoardL extends JPanel
   private void gameOver(Graphics g) {
     
     String msg = "Game Over";
-    Font small = new Font("Helvetica", Font.BOLD, 14);
+    Font small = new Font("Helvetica", Font.BOLD, 30);
     FontMetrics metr = getFontMetrics(small);
     
     g.setColor(Color.white);
@@ -521,7 +523,7 @@ public class BoardL extends JPanel
     }
     
     if (!SNAKE_inGame) {
-//      timer.stop();
+//      SNAKE_timer.stop();
     }
   }
   

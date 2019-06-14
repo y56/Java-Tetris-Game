@@ -10,20 +10,16 @@ Author: Jan Bodnar
 Website: http://zetcode.com
  */
 public class Tetris extends JFrame {
-  private JLabel statusbar;
+  public JLabel statusbar = new JLabel(" 0");
   
   public Tetris() { // constructor of Tetris (which is a JFrame)
     this.initUI();
     this.setLayout(null); /* Use it, otherwise the position of Board (extending JPanel)
       Using this will cause statusbar to disappear */
     this.setLocation(0, 0); // (0,0) is a left-up corner
-    
   }
   
-  private void initUI() {
-  
-  
-    
+  public void initUI() {
 //    BoardR boardR = new BoardR(this);
 //
 //    boardR.setBounds(530, 20, 500, 500);
@@ -50,10 +46,15 @@ public class Tetris extends JFrame {
     boardL.setLayout(null);
     blankBar2.setVisible(true);
   
-    statusbar = new JLabel(" 0");
-    blankBar.add(statusbar);
-//    blankBar.setLayout(null);
-//    statusbar.setBounds(100,0,0,0);
+    
+    System.out.println("54");
+    System.out.println(statusbar);
+    add(statusbar, BorderLayout.SOUTH);
+    System.out.println("58");
+    System.out.println(statusbar);
+    add(statusbar);
+    blankBar.setLayout(null);
+    statusbar.setBounds(100,0,0,0);
     statusbar.setVisible(true);
     
     setTitle("Tetris");
@@ -63,7 +64,9 @@ public class Tetris extends JFrame {
   }
   
   public JLabel getStatusBar() {
-    
+    System.out.println("66");
+    System.out.println(statusbar);
+  
     return statusbar;
   }
   
