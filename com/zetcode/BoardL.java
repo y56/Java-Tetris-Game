@@ -17,7 +17,7 @@ public class BoardL extends JPanel
   private final int BOARD_WIDTH_L = 50; // the number of boxes within a side
   private final int BOARD_HEIGHT = 20;
   private final int BOARD_WIDTH_L_TO_REMOVE_LINE = 10;
-  private final int TETRIS_DELAY = 500;
+  private final int TETRIS_DELAY = 600;
   
   private Timer tetris_timer;
   private boolean isFallingFinished = false;
@@ -405,7 +405,7 @@ public class BoardL extends JPanel
   private final int SNAKE_DOT_SIZE = 10;
   private final int SNAKE_ALL_DOTS = 900;
   private final int SNAKE_RAND_POS = 29;
-  private final int SNAKE_DELAY = 500;
+  private final int SNAKE_DELAY = 600;
   
   private final int SNAKE_x[] = new int[SNAKE_ALL_DOTS];
   private final int SNAKE_y[] = new int[SNAKE_ALL_DOTS];

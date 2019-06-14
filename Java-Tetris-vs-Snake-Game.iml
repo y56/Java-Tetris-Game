@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="javax.media:jmf:2.1.1e" level="project" />
+    <orderEntry type="library" name="com.bacoder.jgit:org.eclipse.jgit:3.1.0-201309071158-r" level="project" />
   </component>
 </module>
