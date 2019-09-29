@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="com.bacoder.jgit:org.eclipse.jgit:3.1.0-201309071158-r" type="repository">
+    <properties maven-id="com.bacoder.jgit:org.eclipse.jgit:3.1.0-201309071158-r" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.jgit-3.1.0-201309071158-r.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsch-0.1.46.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/JavaEWAH-0.5.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.jgit-3.1.0-201309071158-r-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsch-0.1.46-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/JavaEWAH-0.5.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
