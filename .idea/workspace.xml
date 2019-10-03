@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ab91d3f-bb36-4cbd-b0c9-856dad6dc0ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9ab91d3f-bb36-4cbd-b0c9-856dad6dc0ec" name="Default Changelist" comment="Change position/color of Tetris `statusbar`">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/zetcode/Tetris.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/zetcode/Tetris.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Java_Tetris_Game_jar/Java-Tetris-Game.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Java_Tetris_Game_jar/Java-Tetris-Game.jar" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,45 +32,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>time</find>
-      <find>start</find>
-      <find>timer.start()</find>
-      <find>delay</find>
-      <find>stop</find>
-      <find>snake_dela</find>
-      <find>isStarted</find>
-      <find>timer</find>
-      <find>.start();</find>
-      <find>getStatusBar</find>
-      <find>parent</find>
-      <find>tetris_timer</find>
-      <find>game</find>
-      <find>Graphics g</find>
-      <find>g</find>
-      <find>gameOver</find>
-      <find>(g)</find>
-      <find>newPiece</find>
-      <find>Graphics</find>
-      <find>jpanel</find>
-      <find>jlabel</find>
-      <find>GAME OVER</find>
-      <find>statusbar</find>
-      <find>GAME U</find>
-      <find>system</find>
-      <find>graph</find>
-      <find>setf</find>
-      <find>setF</find>
-      <find>setCo</find>
-      <find>DELAY</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>ShapeR</replace>
-      <replace>TetrominoeR</replace>
-      <replace>TetrominoeL</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -457,15 +418,6 @@
     </task>
     <option name="localTasksCounter" value="14" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

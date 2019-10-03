@@ -173,12 +173,12 @@ public class Tetris extends JFrame {
         game.setVisible(true);
       }
     );
-    
+
     BufferedWriter writer = null;
     try {
       //create a temporary file
       String timeLog = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
-      File logFile = new File("c:\\Users\\GG\\Documents\\test-java-git\\y56-beat-you-" + timeLog + ".XD");
+      File logFile = new File("/home/y56/github/test-java-git/" + "y56-beat-you-" + timeLog + ".XD");
       
       // This will output the full path where the file will be written to...
       System.out.println(logFile.getCanonicalPath());
@@ -196,7 +196,7 @@ public class Tetris extends JFrame {
     }
     
     
-    Path directory = Paths.get("c:\\Users\\GG\\Documents\\test-java-git");
+    Path directory = Paths.get("/home/y56/github/test-java-git");
     System.out.println(directory);
     Git.gitStage(directory);
     Git.gitCommit(directory, "お前はもう死んでいる");
