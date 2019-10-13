@@ -1,4 +1,6 @@
 # Tetris-vs-Snake
+<img src="/Screenshot from 2019-10-13 18-29-01 - 1.png" width=400 align="middle">
+
 ## Reference
 http://zetcode.com/tutorials/javagamestutorial/tetris/ 
 
